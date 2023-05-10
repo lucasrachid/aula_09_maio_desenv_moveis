@@ -1,3 +1,4 @@
+import 'package:aula_nove_de_maio/campo.dart';
 import 'package:aula_nove_de_maio/formularioDTO.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,6 +75,10 @@ class Formulario extends StatelessWidget {
                 formularioDTO.age = inputValue;
                 return null;
               },
+            ),
+            Campo(
+              rotulo: 'Nome',
+              campo: name,
             ),
             ElevatedButton(
                 onPressed: () {
